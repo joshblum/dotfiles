@@ -1,4 +1,11 @@
 colorscheme desert
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
+source $HOME/.vim/custom/plugins.vim
+source $HOME/.vim/custom/settings.vim
+source $HOME/.vim/custom/settings.vim
 
 " Make all spaces size 2, plus some other tricks
 set tabstop=2 shiftwidth=2 expandtab smarttab
