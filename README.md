@@ -4,12 +4,12 @@ dotfiles
 Installation
 --------
 
-    git clone git@github.com:joshblum/dotfiles.git ~/.vim
+    git clone git@github.com:joshblum/dotfiles.git ~/.dotfiles
 
 Initialize plugins:
 --------
 
-    cd ~/.vim
+    cd ~/.dotfiles
     ./init.sh
 
 
