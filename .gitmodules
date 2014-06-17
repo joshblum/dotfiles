@@ -1,11 +1,11 @@
-[submodule "bundle/ctrlp"]
-	path = bundle/ctrlp
+[submodule "vim/bundle/ctrlp"]
+	path = vim/bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/autopep8"]
-	path = bundle/autopep8
+[submodule "vim/bundle/autopep8"]
+	path = vim/bundle/autopep8
 	url = https://github.com/tell-k/vim-autopep8.git
 [submodule "git-aware-prompt"]
 	path = git-aware-prompt
