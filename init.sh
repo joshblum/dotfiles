@@ -7,3 +7,5 @@ cp vimrc ~/.vimrc
 cp screenrc ~/.screenrc
 cp bash_profile ~/.bash_profile
 
+source ~/.bash_profile
+
