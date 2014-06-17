@@ -1,4 +1,4 @@
-export GITAWAREPROMPT=~/.dotfile/.git-aware-prompt 
+export GITAWAREPROMPT=~/.dotfiles/.git-aware-prompt 
 
 source $GITAWAREPROMPT/main.sh 
 
