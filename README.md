@@ -1,4 +1,4 @@
-dotfiles
+.files
 ========
 
 Installation
@@ -6,14 +6,14 @@ Installation
 
     git clone git@github.com:joshblum/dotfiles.git ~/.dotfiles
 
-Initialize plugins:
+Initialization:
 --------
 
     cd ~/.dotfiles
     ./init.sh
 
 
-Add a plugin from a git repository   
+Add plugins 
 --------
 
     git submodule add [link_to_git_repository.git] vim/bundle[plugin_name]
