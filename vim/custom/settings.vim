@@ -12,7 +12,7 @@ set laststatus=2
 set statusline=%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
 
 " Make all spaces size 2, plus some other tricks
-set tabstop=4 shiftwidth=4 expandtab smarttab
+set tabstop=2 shiftwidth=2 expandtab smarttab
 set nocompatible
 set autoindent
 set showcmd
