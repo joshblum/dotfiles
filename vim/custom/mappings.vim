@@ -12,3 +12,6 @@ map <Tab> <C-W>w
 
 " Press enter to autocomplete
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" map jj to escape
+inoremap jj <Esc>
