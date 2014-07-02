@@ -26,4 +26,4 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 set autoread
 
 autocmd Filetype html,javascript setlocal ts=2 sts=2 sw=2
-
+set pastetoggle=<F2>
