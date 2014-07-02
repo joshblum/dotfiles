@@ -50,9 +50,9 @@ clean() {
   files="~/.vim ~/.vimrc ~/.screenrc ~/.bash_profile"
   for f in $files;
   do
-    name="$f-*-bak"
+    name=$f-*-bak
     echo "Removing $name"
-    rm -rf $name
+    eval rm -rf $name
   done
 }
 
