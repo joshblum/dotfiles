@@ -20,7 +20,7 @@ backup() {
   if [ -f $dst ]; then
     name="$dst-`timestamp`-bak"
     echo "Saving old $dst as $name"
-    mv $dst "name"
+    mv $dst $name
   fi
   cp $src $dst
 }
