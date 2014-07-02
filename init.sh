@@ -1,7 +1,7 @@
 #! /bin/bash
 
 die () {
-    echo >&2 "$@"
+    echo -e >&2 "$@"
     exit 1
 }
 
@@ -60,7 +60,7 @@ usage() {
   echo "Usage: ./init.sh [install|clean]"
 }
 
-[ "$#" -eq 1 ] || die "1 argument required, $# provided"
+[ "$#" -eq 1 ] || die "`usage`\n1 argument required, $# provided"
 
 if [ "$1"  == "install" ]; then
     install
