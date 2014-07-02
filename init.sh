@@ -17,12 +17,12 @@ timestamp() {
 backup() {
   src=$1
   dst=$2
-  if [ -f $dst ]; then
+  if [ -e $dst ]; then
     name="$dst-`timestamp`-bak"
     echo "Saving old $dst as $name"
     mv $dst $name
   fi
-  cp $src $dst
+  cp -R $src $dst
 }
 
 install() {
