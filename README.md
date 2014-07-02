@@ -10,7 +10,13 @@ Initialization:
 --------
 
     cd ~/.dotfiles
-    ./init.sh
+    ./init.sh install
+
+
+Remove old backups
+--------
+    cd ~/.dotfiles
+    ./init.sh clean
 
 
 Add plugins 
