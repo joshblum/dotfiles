@@ -11,6 +11,7 @@ Initialization:
 
     cd ~/.dotfiles
     ./init.sh install
+    source ~/.bash_profile
 
 
 Remove old backups
@@ -19,7 +20,7 @@ Remove old backups
     ./init.sh clean
 
 
-Add plugins 
+Add plugins
 --------
 
     git submodule add [link_to_git_repository.git] vim/bundle[plugin_name]

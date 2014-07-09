@@ -6,7 +6,7 @@ die () {
 }
 
 _done() {
-	printf "...done\n\n"
+  printf "...done\n\n"
 }
 
 # Define a timestamp function
@@ -27,8 +27,8 @@ backup() {
 
 install() {
   echo "Starting installation..."
-  echo "Installing autopep8"
-  sudo pip install autopep8
+  echo "Installing common python packages."
+  sudo pip install -r requirements.txt
   _done
 
   echo "Initializing submodules"
@@ -36,12 +36,11 @@ install() {
   git submodule update
   _done
 
-  echo "Copying vim, screen, and bash settings"
+  echo "Copying vim, screen, and bash settings."
   backup vim/ ~/.vim
   backup vim/vimrc ~/.vimrc
   backup screenrc ~/.screenrc
   backup bash_profile ~/.bash_profile
-  source ~/.bash_profile
   _done
 }
 
