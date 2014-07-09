@@ -32,8 +32,7 @@ install() {
   _done
 
   echo "Initializing submodules"
-  git submodule init
-  git submodule update
+  git submodule update --init --recursive
   _done
 
   echo "Copying vim, screen, and bash settings."
