@@ -10,14 +10,14 @@ Initialization:
 --------
 
     cd ~/.dotfiles
-    ./init.sh install
+    ./configure install
     source ~/.bash_profile
 
 
 Remove old backups
 --------
     cd ~/.dotfiles
-    ./init.sh clean
+    ./configure clean
 
 
 Add plugins
