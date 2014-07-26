@@ -35,17 +35,20 @@ install() {
   git submodule update --init --recursive
   _done
 
+  mkdir ~/.config
+
   echo "Copying vim, screen, and bash settings."
   backup vim/ ~/.vim
   backup vim/vimrc ~/.vimrc
   backup screenrc ~/.screenrc
   backup bash_profile ~/.bash_profile
+  backup flake8.config ~/.config/flake8
   _done
 }
 
 clean() {
   echo "Cleaing old files..."
-  files="~/.vim ~/.vimrc ~/.screenrc ~/.bash_profile"
+  files="~/.vim ~/.vimrc ~/.screenrc ~/.bash_profile ~/.config/flake8"
   for f in $files;
   do
     name=$f-*-bak
