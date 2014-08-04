@@ -1,4 +1,6 @@
-.PHONE: install, clean
+.PHONE: install, clean, default
+
+default: install
 
 install:
 	./configure install
