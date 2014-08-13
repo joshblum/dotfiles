@@ -34,6 +34,9 @@ install() {
   echo "Initializing submodules"
   git submodule update --init --recursive
   _done
+  
+  echo "Downloading git autocomplete"
+  curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 
   mkdir ~/.config
 
