@@ -12,3 +12,7 @@ fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 
 source /usr/local/bin/virtualenvwrapper.sh
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
