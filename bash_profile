@@ -11,8 +11,9 @@ if [ -S "$SSH_AUTH_SOCK" ] && [ ! -h "$SSH_AUTH_SOCK" ]; then
 fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 
-source ~/.local/bin/virtualenvwrapper.sh
-export PATH=$PATH:~/.local/bin
+LOCAL_BIN=$HOME/.local/bin
+source $LOCAL_BIN/virtualenvwrapper.sh
+export PATH=$PATH:$LOCAL_BIN
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash

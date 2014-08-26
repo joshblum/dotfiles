@@ -28,7 +28,7 @@ backup() {
 install() {
   echo "Starting installation..."
   echo "Installing common python packages."
-  pip install --user -r requirements.txt
+  pip install --user --upgrade -r requirements.txt
   _done
 
   echo "Initializing submodules"
