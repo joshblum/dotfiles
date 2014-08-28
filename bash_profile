@@ -18,3 +18,7 @@ export PATH=$PATH:$LOCAL_BIN
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+export GOPATH=$HOME/go
+mkdir $GOPATH
+export PATH=$PATH:$GOPATH/bin
