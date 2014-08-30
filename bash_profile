@@ -10,7 +10,11 @@ if [ -S "$SSH_AUTH_SOCK" ] && [ ! -h "$SSH_AUTH_SOCK" ]; then
     ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
 fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
+
+export PATH=/usr/local/bin:$PATH
+
 if [ `uname` == "Darwin" ]; then
+  VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
   source /usr/local/bin/virtualenvwrapper.sh
 else
   LOCAL_BIN=$HOME/.local/bin
@@ -18,7 +22,6 @@ else
   export PATH=$PATH:$LOCAL_BIN
 fi
 
-export PATH='/usr/local/bin:$PATH'
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
@@ -26,7 +29,7 @@ fi
 
 if [ -f `which go` ]; then
   GOPATH=$HOME/go
-  export $GOPATH
-  mkdir $GOPATH
-  export PATH='$PATH:$GOPATH/bin'
+  export GOPATH=$GOPATH
+  mkdir -p $GOPATH
+  export PATH=$PATH:/usr/local/opt/go/libexec/bin:$GOPATH/bin
 fi

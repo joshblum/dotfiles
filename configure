@@ -42,7 +42,7 @@ install() {
   echo "Downloading git autocomplete"
   curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 
-  mkdir ~/.config
+  mkdir -p ~/.config
 
   echo "Copying vim, screen, and bash settings."
   backup vim/ ~/.vim
