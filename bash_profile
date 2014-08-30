@@ -31,5 +31,10 @@ if [ -f `which go` ]; then
   GOPATH=$HOME/go
   export GOPATH=$GOPATH
   mkdir -p $GOPATH
-  export PATH=$PATH:/usr/local/opt/go/libexec/bin:$GOPATH/bin
+  if [ `uname` == "Darwin" ]; then
+    export PATH=$PATH:/usr/local/opt/go/libexec/bin
+  else
+    export PATH=/usr/local/go/bin:$PATH
+  fi
+  export PATH=$PATH:$GOPATH/bin
 fi
