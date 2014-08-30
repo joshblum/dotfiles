@@ -28,7 +28,11 @@ backup() {
 install() {
   echo "Starting installation..."
   echo "Installing common python packages."
-  pip install --user --upgrade -r requirements.txt
+  if [ `uname` == "Darwin" ]; then
+    pip install --upgrade -r requirements.txt
+  else
+    pip install --user --upgrade -r requirements.txt
+  fi
   _done
 
   echo "Initializing submodules"
