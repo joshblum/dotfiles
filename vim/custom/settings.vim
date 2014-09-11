@@ -16,7 +16,7 @@ set tabstop=2 shiftwidth=2 expandtab smarttab
 set nocompatible
 set autoindent
 set showcmd
-set number 
+set number
 
 " Ignore case when doing regex searches, except if you capitalize explicitly
 set ignorecase

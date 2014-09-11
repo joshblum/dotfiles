@@ -17,4 +17,4 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap jj <Esc>
 
 " autoformatting
-noremap <C-S> :Autoformat<CR><CR>
+noremap <F3> :Autoformat<CR><CR>
