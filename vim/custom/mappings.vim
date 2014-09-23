@@ -15,3 +15,6 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " map jj to escape
 inoremap jj <Esc>
+
+" autoformatting
+noremap <F3> :Autoformat<CR><CR>

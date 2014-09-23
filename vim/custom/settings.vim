@@ -16,7 +16,7 @@ set tabstop=2 shiftwidth=2 expandtab smarttab
 set nocompatible
 set autoindent
 set showcmd
-set number 
+set number
 
 " Ignore case when doing regex searches, except if you capitalize explicitly
 set ignorecase
@@ -40,3 +40,9 @@ autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 au BufNewFile,BufRead *.go set ft=go
 
 set backspace=indent,eol,start
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd BufRead,BufNewFile *.txt setlocal spell
+set complete+=kspell
+
+" OpenCL
+au BufNewFile,BufRead *.cl  setf opencl

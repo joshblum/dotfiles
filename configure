@@ -9,18 +9,13 @@ _done() {
   printf "...done\n\n"
 }
 
-# Define a timestamp function
-timestamp() {
-  date +"%T"
-}
-
 backup() {
   src=$1
   dst=$2
   if [ -e $dst ]; then
-    name="$dst-`timestamp`-bak"
+    name="$dst-`date`-bak"
     echo "Saving old $dst as $name"
-    mv $dst $name
+    mv "$dst" "$name"
   fi
   cp -R $src $dst
 }
