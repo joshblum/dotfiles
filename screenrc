@@ -1,4 +1,14 @@
+startup_message off
 hardstatus alwayslastline
 hardstatus string "%{= g} %{= w}%-Lw%{=r}%n%f* %t%{-}%+LW"
 defscrollback 10000
+
+# make shell work
 shell -$SHELL
+
+# 256 colors
+#attrcolor b ".I"
+#termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+#defbce "on"
+
+#term "xterm-256color
