@@ -1,8 +1,8 @@
-syntax on
-colorscheme desert
-
 execute pathogen#infect()
 call pathogen#helptags() " generate helptags for everything in ‘runtimepath’
+
+syntax enable
+colorscheme desert
 
 filetype plugin indent on
 

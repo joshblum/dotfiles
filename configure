@@ -45,6 +45,7 @@ install() {
   backup screenrc ~/.screenrc
   backup bash_profile ~/.bash_profile
   backup flake8.config ~/.config/flake8
+  backup gitconfig ~/.gitconfig
   _done
 }
 
