@@ -46,6 +46,7 @@ install() {
   backup bash_profile ~/.bash_profile
   backup flake8.config ~/.config/flake8
   backup gitconfig ~/.gitconfig
+  backup gitignore_global ~/.gitignore_global
   _done
 }
 

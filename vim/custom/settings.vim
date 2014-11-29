@@ -42,7 +42,10 @@ au BufNewFile,BufRead *.go set ft=go
 set backspace=indent,eol,start
 autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufRead,BufNewFile *.txt setlocal spell
+autocmd BufRead,BufNewFile *.tex setlocal spell
 set complete+=kspell
 
 " OpenCL
 au BufNewFile,BufRead *.cl  setf opencl
+
+autocmd BufNewFile,BufRead *.tex set makeprg=pdflatex\ %\ &&\ open\ %:r.pdf
