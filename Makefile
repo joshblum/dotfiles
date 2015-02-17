@@ -1,4 +1,4 @@
-.PHONY: install, clean, default
+.PHONY: install clean default
 
 default: install
 
