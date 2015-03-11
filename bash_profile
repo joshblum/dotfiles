@@ -38,3 +38,9 @@ if [ -f `which go` ]; then
   fi
   export PATH=$PATH:$GOPATH/bin
 fi
+
+# Aliases
+if [ `uname` == "Darwin" ]; then
+  alias gwd="pwd | pbcopy" # get working directoy
+  alias cwd="cd `pbpaste`" # change working directory
+fi
