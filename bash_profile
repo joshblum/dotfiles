@@ -18,8 +18,10 @@ if [ `uname` == "Darwin" ]; then
   source /usr/local/bin/virtualenvwrapper.sh
 else
   LOCAL_BIN=$HOME/.local/bin
-  source $LOCAL_BIN/virtualenvwrapper.sh
-  export PATH=$PATH:$LOCAL_BIN
+  if [ -f $LOCAL_BIN/virtualenvwrapper.sh ]; then
+    source $LOCAL_BIN/virtualenvwrapper.sh
+    export PATH=$PATH:$LOCAL_BIN
+  fi
 fi
 
 
@@ -27,7 +29,7 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-if [ -f `which go` ]; then
+if [ -f `which go 2>/dev/null` ]; then
   GOPATH=$HOME/go
   export GOPATH=$GOPATH
   mkdir -p $GOPATH
