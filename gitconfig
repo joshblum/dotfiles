@@ -2,9 +2,6 @@
   name = Joshua Blum
   email = joshblum@mit.edu
 
-[push]
-  default = simple
-
 [grep]
   linenumber = true
 
