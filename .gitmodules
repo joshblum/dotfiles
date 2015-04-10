@@ -25,3 +25,6 @@
 [submodule "vim/bundle/LaTeX-Box"]
 	path = vim/bundle/LaTeX-Box
 	url = git://github.com/LaTeX-Box-Team/LaTeX-Box.git
+[submodule "osx-terminal-solarized"]
+	path = osx-terminal-solarized
+	url = git@github.com:tomislav/osx-terminal.app-colors-solarized.git
