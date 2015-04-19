@@ -5,6 +5,7 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+filetype on
 filetype plugin indent on
 
 source $HOME/.vim/custom/mappings.vim
