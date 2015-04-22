@@ -6,6 +6,11 @@ Installation
 
     git clone git@github.com:joshblum/dotfiles.git ~/.dotfiles
 
+Or:
+
+    wget https://raw.githubusercontent.com/joshblum/dotfiles/master/install
+    ./install
+
 Initialization:
 --------
 
