@@ -9,7 +9,7 @@ Installation
 Or:
 
     wget https://raw.githubusercontent.com/joshblum/dotfiles/master/install
-    ./install
+    bash install
 
 Initialization:
 --------
