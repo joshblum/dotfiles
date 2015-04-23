@@ -1,6 +1,14 @@
-- clean: ['~', '~/.config']
+- clean: [
+  '~',
+  '~/.config'
+]
 
-- shell: [./configure]
+- shell: [
+  {
+    command: ./configure,
+    stdout: true
+  }
+]
 
 - link: {
   ~/.vim: vim,
