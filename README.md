@@ -13,15 +13,12 @@ Installation
 --------
 
     git clone git@github.com:joshblum/dotfiles.git ~/.dotfiles
-
-Initialization:
---------
-
     cd ~/.dotfiles
     make
     source ~/.bash_profile
 
 
+Note: .dotfiles uses [Dotbot](https://github.com/anishathalye/dotbot) for installation.
 Add plugins
 --------
 
