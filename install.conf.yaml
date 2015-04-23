@@ -1,0 +1,16 @@
+- clean: ['~', '~/.config']
+
+- shell: [./configure]
+
+- link: {
+  ~/.vim: vim,
+  ~/.vimrc: vim/vimrc,
+  ~/.screenrc: screenrc,
+  ~/.bash_profile: bash_profile,
+  ~/.config/flake8: {
+    create: true,
+    path: flake8.config,
+  },
+  ~/.gitconfig: gitconfig,
+  ~/.gitignore_global: gitignore_global,
+}

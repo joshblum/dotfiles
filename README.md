@@ -3,10 +3,10 @@
 
 To automatically clone the repository and install the requirements (`git` and `pip`) use:
 
-    wget https://raw.githubusercontent.com/joshblum/dotfiles/master/install
-    bash install
+    wget https://raw.githubusercontent.com/joshblum/dotfiles/master/bootstrap-install
+    bash bootstrap-install
     source ~/.bash_profile
-    
+
 Alternatively, you can manually download and install by doing the following:
 
 Installation
@@ -20,12 +20,6 @@ Initialization:
     cd ~/.dotfiles
     make
     source ~/.bash_profile
-
-
-Remove old backups
---------
-    cd ~/.dotfiles
-    make clean
 
 
 Add plugins

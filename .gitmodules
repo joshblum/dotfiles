@@ -31,3 +31,6 @@
 [submodule "vim/bundle/haskell-vim"]
 	path = vim/bundle/haskell-vim
 	url = https://github.com/raichoo/haskell-vim.git
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot

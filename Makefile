@@ -1,9 +1,6 @@
-.PHONY: install clean default
+.PHONY: install default
 
 default: install
 
 install:
-	./configure install
-
-clean:
-	./configure clean
+	./install
