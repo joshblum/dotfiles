@@ -5,8 +5,12 @@
 
 - shell: [
   {
-    command: ./configure,
-    stdout: true
+    command: pip install --user --upgrade -r requirements.txt,
+    stdout: true,
+  },
+  {
+    command: git submodule update --init --recursive,
+    stdout: true,
   }
 ]
 
@@ -15,6 +19,8 @@
   ~/.vimrc: vim/vimrc,
   ~/.screenrc: screenrc,
   ~/.bash_profile: bash_profile,
+  ~/.git-completion.bash: git-completion.bash,
+  ~/.pydistutils.cfg: pydistutils.cfg,
   ~/.config/flake8: {
     create: true,
     path: flake8.config,
