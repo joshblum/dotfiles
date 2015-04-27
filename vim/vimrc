@@ -1,13 +1,9 @@
+"--------------
+" Load pathogen
+"--------------
 execute pathogen#infect()
-call pathogen#helptags() " generate helptags for everything in ‘runtimepath’
+call pathogen#helptags()
 
-syntax enable
-set background=dark
-colorscheme solarized
-
-filetype on
-filetype plugin indent on
-
+source $HOME/.vim/custom/settings.vim
 source $HOME/.vim/custom/mappings.vim
 source $HOME/.vim/custom/plugins.vim
-source $HOME/.vim/custom/settings.vim
