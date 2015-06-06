@@ -19,6 +19,13 @@ Installation
 
 
 Note: .dotfiles uses [Dotbot](https://github.com/anishathalye/dotbot) for installation.
+
+Update
+--------
+Update all project submodules:
+
+    make update
+
 Add plugins
 --------
 
