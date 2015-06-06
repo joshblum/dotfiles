@@ -20,6 +20,7 @@
   ~/.screenrc: screenrc,
   ~/.bash_profile: bash_profile,
   ~/.git-completion.bash: git-completion.bash,
+  ~/.pydistutils.cfg: pydistutils.cfg,
   ~/.config/flake8: {
     create: true,
     path: flake8.config,
