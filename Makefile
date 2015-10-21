@@ -6,4 +6,4 @@ install:
 	./install
 
 update:
-	git submodule foreach git pull
+	git submodule foreach git checkout master; git pull
