@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # dotfiles requires git and pip
 if [ `uname` == "Darwin" ]; then
   brew install git python

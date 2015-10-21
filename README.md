@@ -3,7 +3,7 @@
 
 To automatically clone the repository and install the requirements (`git` and `pip`) use:
 
-    wget https://raw.githubusercontent.com/joshblum/dotfiles/master/bootstrap-install
+    curl -fsSLO https://raw.githubusercontent.com/joshblum/dotfiles/master/bootstrap-install
     bash bootstrap-install
     source ~/.bash_profile
 
