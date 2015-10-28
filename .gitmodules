@@ -9,12 +9,12 @@
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "vim/bundle/autopep8"]
 	path = vim/bundle/autopep8
-  url = https://github.com/tell-k/vim-autopep8.git
-  ignore = dirty
+	url = https://github.com/tell-k/vim-autopep8.git
+	ignore = dirty
 [submodule "vim/bundle/vim-jsbeautify"]
 	path = vim/bundle/vim-jsbeautify
 	url = https://github.com/maksimr/vim-jsbeautify.git
-  ignore = dirty
+	ignore = dirty
 [submodule "vim/bundle/vim-go"]
 	path = vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
