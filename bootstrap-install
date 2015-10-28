@@ -8,8 +8,8 @@ else
                 python-dev\
                 build-essential
 fi
-pip install --upgrade --user pip
-pip install --upgrade --user distribute
+sudo pip install --upgrade --user pip
+sudo pip install --upgrade --user distribute
 
 git clone git@github.com:joshblum/dotfiles.git ~/.dotfiles || git clone https://github.com/joshblum/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles && make
