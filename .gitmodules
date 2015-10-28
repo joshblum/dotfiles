@@ -14,6 +14,7 @@
 [submodule "vim/bundle/vim-jsbeautify"]
 	path = vim/bundle/vim-jsbeautify
 	url = https://github.com/maksimr/vim-jsbeautify.git
+  ignore = dirty
 [submodule "vim/bundle/vim-go"]
 	path = vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
@@ -22,13 +23,13 @@
 	url = https://github.com/Chiel92/vim-autoformat.git
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
+	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "vim/bundle/LaTeX-Box"]
 	path = vim/bundle/LaTeX-Box
-	url = git://github.com/LaTeX-Box-Team/LaTeX-Box.git
+	url = https://github.com/LaTeX-Box-Team/LaTeX-Box.git
 [submodule "osx-terminal-solarized"]
 	path = osx-terminal-solarized
-	url = git@github.com:tomislav/osx-terminal.app-colors-solarized.git
+	url = https://github.com/tomislav/osx-terminal.app-colors-solarized.git
 [submodule "vim/bundle/haskell-vim"]
 	path = vim/bundle/haskell-vim
 	url = https://github.com/raichoo/haskell-vim.git
