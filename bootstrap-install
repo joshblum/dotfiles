@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 # dotfiles requires git and pip
 if [ `uname` == "Darwin" ]; then
+  brew update
   brew install git python
 else
+  sudo apt-get update
   sudo apt-get -y install git\
                 python-pip\
                 python-dev\
