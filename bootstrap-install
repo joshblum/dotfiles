@@ -3,7 +3,7 @@
 if [ `uname` == "Darwin" ]; then
   brew install git python
 else
-  sudo apt-get -y install git\
+  sudo apt-get -y --force yes install git\
                 python-pip\
                 python-dev\
                 build-essential
