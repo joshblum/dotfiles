@@ -1,4 +1,6 @@
-.PHONY: install default update packages
+.PHONY: install \
+	packages \
+	update
 
 default: install
 
@@ -14,5 +16,6 @@ else
 	cat packages.txt | xargs sudo apt-get -y install
 endif
 
-update:
-	git submodule foreach git checkout master; git pull
+submodule-update:
+	git submodule foreach git checkout master
+	git submodule foreach git pull --rebase origin master
