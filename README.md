@@ -7,6 +7,7 @@ To automatically clone the repository and install the requirements (`git` and `p
 curl -fsSLO https://raw.githubusercontent.com/joshblum/dotfiles/master/bootstrap-install
 bash bootstrap-install
 source ~/.bash_profile
+cd ~/.dotfiles
 make packages # optionally install some basic packages
 ```
 
