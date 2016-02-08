@@ -11,10 +11,11 @@ if [ -S "$SSH_AUTH_SOCK" ] && [ ! -h "$SSH_AUTH_SOCK" ]; then
 fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 
-export PATH=/usr/local/bin:$PATH:~/.local/bin
+export PATH=/usr/local/bin:/usr/local/sbin/$PATH:~/.local/bin
 
 if [ `uname` == "Darwin" ]; then
-  VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+  export WORKON_HOME=$HOME/.virtualenvs
+  export PATH=$PATH:$HOME/Library/Python/2.7/bin
   source /usr/local/bin/virtualenvwrapper.sh
 else
   LOCAL_BIN=$HOME/.local/bin
