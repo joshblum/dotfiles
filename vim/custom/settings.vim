@@ -28,6 +28,9 @@ set hlsearch " highlight search
 set laststatus=2
 set statusline=%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
 
+" Make all spaces size 4, use spaces instead of tabs
+set tabstop=4 shiftwidth=4 expandtab smarttab
+
 set showcmd
 set number " number lines
 
