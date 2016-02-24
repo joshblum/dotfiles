@@ -12,16 +12,19 @@ fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 
 export PATH=/usr/local/bin:/usr/local/sbin/$PATH:~/.local/bin
+export WORKON_HOME=$HOME/.virtualenvs
+DEFAULT_VIRTUALENV_WRAPPER=/usr/local/bin/virtualenvwrapper.sh
 
 if [ `uname` == "Darwin" ]; then
-  export WORKON_HOME=$HOME/.virtualenvs
   export PATH=$PATH:$HOME/Library/Python/2.7/bin
-  source /usr/local/bin/virtualenvwrapper.sh
+  source $DEFAULT_VIRTUALENV_WRAPPER
 else
   LOCAL_BIN=$HOME/.local/bin
   if [ -f $LOCAL_BIN/virtualenvwrapper.sh ]; then
     source $LOCAL_BIN/virtualenvwrapper.sh
     export PATH=$PATH:$LOCAL_BIN
+  else
+      source $DEFAULT_VIRTUALENV_WRAPPER
   fi
 fi
 
