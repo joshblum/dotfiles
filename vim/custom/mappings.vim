@@ -36,7 +36,3 @@ au BufNewFile,BufRead *.go set ft=go
 au BufNewFile,BufRead *.cl  setf opencl " OpenCL
 
 autocmd BufNewFile,BufRead *.tex set makeprg=pdflatex\ %\ &&\ open\ %:r.pdf " latex
-autocmd BufRead,BufNewFile *.md setlocal spell
-autocmd BufRead,BufNewFile *.txt setlocal spell
-autocmd BufRead,BufNewFile *.tex setlocal spell
-autocmd BufRead,BufNewFile *.html setlocal spell

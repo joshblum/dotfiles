@@ -41,5 +41,7 @@ set smartcase
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set autoread
 
+set spell
+
 set complete+=kspell
 autocmd filetype crontab setlocal nobackup nowritebackup
