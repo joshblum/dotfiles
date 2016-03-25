@@ -30,9 +30,9 @@
 [submodule "osx-terminal-solarized"]
 	path = osx-terminal-solarized
 	url = https://github.com/tomislav/osx-terminal.app-colors-solarized.git
-[submodule "vim/bundle/haskell-vim"]
-	path = vim/bundle/haskell-vim
-	url = https://github.com/raichoo/haskell-vim.git
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+[submodule "vim/bundle/editorconfig-vim"]
+	path = vim/bundle/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
