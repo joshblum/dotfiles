@@ -45,4 +45,4 @@ set spell
 
 set complete+=kspell
 autocmd filetype crontab setlocal nobackup nowritebackup
-autocmd BufNewFile,BufRead *.template   set syntax=html
+autocmd BufNewFile,BufRead *.{template,webflow} set syntax=html
