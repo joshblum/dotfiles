@@ -21,7 +21,7 @@ noremap <F3> :Autoformat<CR><CR>
 "------------------------------------------
 " Beautify scripts and syntax highlighting
 "------------------------------------------
-autocmd Filetype html,javascript setlocal ts=2 sts=2 sw=2
+autocmd Filetype html,javascript,json setlocal ts=2 sts=2 sw=2
 set pastetoggle=<F2>
 
 map <c-f> :call JsBeautify()<cr>
