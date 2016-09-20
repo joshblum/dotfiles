@@ -25,6 +25,10 @@
     create: true,
     path: flake8.config,
   },
+  ~/.config/pep8: {
+    create: true,
+    path: pep8.config
+  },
   ~/.gitconfig: gitconfig,
   ~/.gitignore_global: gitignore_global,
 }
