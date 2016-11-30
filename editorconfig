@@ -19,20 +19,20 @@ indent_style = tab
 indent_style = space
 indent_size = 2
 
-[**.json]
+[*.json]
 indent_style = space
 indent_size = 2
 
-[**.jsx]
+[*.jsx]
 e4x = true
 indent_style = space
 indent_size = 2
 
-[**.css]
+[*.css]
 indent_style = space
 indent_size = 2
 
-[**.html]
+[*.html]
 indent_style = space
 indent_size = 2
 max_char = 78
