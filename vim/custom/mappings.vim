@@ -38,3 +38,4 @@ au BufNewFile,BufRead *.go set ft=go
 au BufNewFile,BufRead *.cl  setf opencl " OpenCL
 
 autocmd BufNewFile,BufRead *.tex set makeprg=pdflatex\ %\ &&\ open\ %:r.pdf " latex
+autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
