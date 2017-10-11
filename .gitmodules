@@ -36,3 +36,9 @@
 [submodule "vim/bundle/editorconfig-vim"]
 	path = vim/bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "vim/bundle/vim-isort"]
+	path = vim/bundle/vim-isort
+	url = git@github.com:fisadev/vim-isort.git
+[submodule "vim/bundle/vim-virtualenv"]
+	path = vim/bundle/vim-virtualenv
+	url = git@github.com:jmcantrell/vim-virtualenv.git

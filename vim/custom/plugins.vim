@@ -8,3 +8,4 @@ let NERDTreeShowHidden=1
 " go-vim
 let g:go_fmt_fail_silently = 1
 let g:go_disable_autoinstall = 1
+
