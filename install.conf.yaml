@@ -9,6 +9,10 @@
     stdout: true,
   },
   {
+    command: ./install_pyenv.sh,
+    stdout: true,
+  },
+  {
     command: git submodule update --init --recursive,
     stdout: true,
   }
