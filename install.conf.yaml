@@ -5,11 +5,11 @@
 
 - shell: [
   {
-    command: pip install --user --upgrade -r requirements.txt,
+    command: ./install_pyenv.sh,
     stdout: true,
   },
   {
-    command: ./install_pyenv.sh,
+    command: pip install --user --upgrade -r requirements.txt,
     stdout: true,
   },
   {
