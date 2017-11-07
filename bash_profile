@@ -11,23 +11,6 @@ if [ -S "$SSH_AUTH_SOCK" ] && [ ! -h "$SSH_AUTH_SOCK" ]; then
 fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 
-export PATH=/usr/local/bin:/usr/local/sbin/$PATH:~/.local/bin
-export WORKON_HOME=$HOME/.virtualenvs
-DEFAULT_VIRTUALENV_WRAPPER=/usr/local/bin/virtualenvwrapper.sh
-
-if [ `uname` == "Darwin" ]; then
-  export PATH=$PATH:$HOME/Library/Python/2.7/bin
-  source $DEFAULT_VIRTUALENV_WRAPPER
-else
-  LOCAL_BIN=$HOME/.local/bin
-  if [ -f $LOCAL_BIN/virtualenvwrapper.sh ]; then
-    source $LOCAL_BIN/virtualenvwrapper.sh
-    export PATH=$PATH:$LOCAL_BIN
-  else
-      source $DEFAULT_VIRTUALENV_WRAPPER
-  fi
-fi
-
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
