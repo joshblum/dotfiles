@@ -17,15 +17,8 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 if [ -f `which go 2>/dev/null` ]; then
-  GOPATH=$HOME/go
-  export GOPATH=$GOPATH
-  mkdir -p $GOPATH
-  if [ `uname` == "Darwin" ]; then
-    export PATH=$PATH:/usr/local/opt/go/libexec/bin
-  else
-    export PATH=/usr/local/go/bin:$PATH
-  fi
-  export PATH=$PATH:$GOPATH/bin
+  export GOPATH=$(go env GOPATH)
+  export PATH=$PATH:$(go env GOPATH)/bin
 fi
 
 # Aliases
@@ -44,3 +37,8 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# Keybase webserver
+export RUN_MODE=devel
+export KEYBASE_RUN_MODE=devel
+alias kb=$GOPATH/bin/keybase
