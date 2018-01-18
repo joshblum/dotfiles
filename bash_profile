@@ -19,6 +19,7 @@ fi
 if [ -f `which go 2>/dev/null` ]; then
   export GOPATH=$(go env GOPATH)
   export PATH=$PATH:$(go env GOPATH)/bin
+  export CDPATH=.:$GOPATH/src/github.com:$GOPATH/src/golang.org:$GOPATH/src
 fi
 
 # Aliases
