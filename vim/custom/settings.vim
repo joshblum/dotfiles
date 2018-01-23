@@ -49,4 +49,6 @@ autocmd filetype crontab setlocal nobackup nowritebackup
 autocmd BufNewFile,BufRead *.{template,webflow} set syntax=html
 autocmd BufNewFile,BufRead *.vcl set filetype=vcl
 autocmd BufNewFile,BufRead *.iced set filetype=coffee
+autocmd BufRead,BufNewFile *.avdl setlocal filetype=avro-idl
+
 let coffee_compiler = 'iced'

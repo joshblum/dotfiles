@@ -45,3 +45,6 @@
 [submodule "vim/bundle/vim-coffee-script"]
 	path = vim/bundle/vim-coffee-script
 	url = git@github.com:kchmck/vim-coffee-script.git
+[submodule "vim/bundle/avro-vim"]
+	path = vim/bundle/avro-vim
+	url = git@github.com:dln/avro-vim.git
