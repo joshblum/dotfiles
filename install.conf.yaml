@@ -23,6 +23,7 @@
   ~/.vimrc: vim/vimrc,
   ~/.screenrc: screenrc,
   ~/.bash_profile: bash_profile,
+  ~/.keybase.dev: keybase.dev,
   ~/.editorconfig: editorconfig,
   ~/.git-completion.bash: git-completion.bash,
   ~/.config/flake8: {

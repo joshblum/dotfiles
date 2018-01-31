@@ -1,0 +1,85 @@
+#!/usr/bin/env bash
+
+# These are random aliases and settings specific to working at Keybase. They're
+# not intended to be meaningful for anyone else.
+
+function newuser() {
+  cd $(mktemp -d); thisuser
+}
+function thisuser() {
+  export HOME="$(pwd)"
+  export XDG_RUNTIME_DIR="$HOME/runtime"
+  mkdir -p "$XDG_RUNTIME_DIR"
+  export PS1="%F{yellow}TEST $HOME $PS1"
+  ln -sfn "$HOME" /tmp/keybase_last_test_user
+}
+function lastuser() {
+  if ! cd "$(realpath /tmp/keybase_last_test_user)" ; then
+    echo "No last test user."
+    return
+  fi
+  thisuser
+}
+# Keybase webserver
+alias kb='gorun github.com/keybase/client/go/keybase'
+export RUN_MODE=devel
+export KEYBASE_RUN_MODE=devel
+
+random16() {
+  head -c 8 /dev/urandom | tohex
+}
+
+signup() {
+  username="$1"
+  if [ -z "$username" ] ; then
+    echo "Must have a username."
+    return 1
+  fi
+  email="$(random16)@$(random16).com"
+  waitapp
+  kbs signup --batch --username "$username" --passphrase okokokokokok \
+    --email "$email" --device "home thing"
+  # Mark the home dir in case we need to find it.
+  echo "$username" > "$HOME/$username"
+}
+
+waitapp() {
+  echo -n 'waiting for localhost...'
+  while ! curl localhost:3000 > /dev/null 2>&1 ; do
+    sleep 0.1
+  done
+  echo 'localhost is up!'
+}
+
+reapp() {
+  forever restart app
+  waitapp
+}
+
+kbdown() {
+  if killall Keybase &> /dev/null ; then
+    echo Shutting down Keybase GUI...
+  fi
+  if fusermount -uz /keybase &> /dev/null ; then
+    echo Unmounting /keybase...
+  fi
+  if killall kbfsfuse &> /dev/null ; then
+    echo Shutting down kbfsfuse...
+  fi
+  if killall keybase &> /dev/null ; then
+    echo Shutting down keybase service...
+  fi
+}
+
+gorun() {
+  if [ -z "$1" ] ; then
+    echo "Argument required."
+    return 1
+  fi
+  project="$1"
+  shift
+  echo -n "Running \`go install $project\`... " >&2 && \
+  go install "$project" && \
+  echo "Done." >&2 && \
+  "$GOPATH/bin/$(basename "$project")" "$@"
+}

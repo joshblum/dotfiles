@@ -39,7 +39,4 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-# Keybase webserver
-export RUN_MODE=devel
-export KEYBASE_RUN_MODE=devel
-alias kb=$GOPATH/bin/keybase
+source ~/.keybase.dev
