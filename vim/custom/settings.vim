@@ -51,4 +51,6 @@ autocmd BufNewFile,BufRead *.vcl set filetype=vcl
 autocmd BufNewFile,BufRead *.iced set filetype=coffee
 autocmd BufRead,BufNewFile *.avdl setlocal filetype=avro-idl
 
+autocmd Filetype coffee setlocal ts=2 sw=2 sts=0 expandtab
+
 let coffee_compiler = 'iced'
