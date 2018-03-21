@@ -27,6 +27,7 @@ alias kb='gorun github.com/keybase/client/go/keybase'
 alias kbs='kb --standalone'
 export RUN_MODE=devel
 export KEYBASE_RUN_MODE=devel
+export KEYBASE_FEATURES=admin
 
 random16() {
   head -c 8 /dev/urandom | xxd -pu
