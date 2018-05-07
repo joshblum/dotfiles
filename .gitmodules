@@ -48,3 +48,6 @@
 [submodule "vim/bundle/avro-vim"]
 	path = vim/bundle/avro-vim
 	url = git@github.com:dln/avro-vim.git
+[submodule "vim/bundle/vim-es6"]
+	path = vim/bundle/vim-es6
+	url = git@github.com:isRuslan/vim-es6.git
