@@ -10,6 +10,9 @@ alias kb='gorun github.com/keybase/client/go/keybase'
 export RUN_MODE=devel
 export KEYBASE_RUN_MODE=devel
 export KEYBASE_FEATURES=admin
+export CHAT_MYSQL_DSN='root@/keybase'
+export MYSQL_DSN='root@/keybase?charset=utf8mb4'
+export REDIS_URI='redis://localhost'
 
 waitapp() {
   echo -n 'waiting for localhost...'
