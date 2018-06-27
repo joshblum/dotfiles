@@ -56,3 +56,4 @@ eval "$(pyenv init -)"
 
 source ~/.keybase.dev
 export PATH="/usr/local/opt/node@8/bin:$PATH"
+source ~/.android.dev
