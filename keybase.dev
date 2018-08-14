@@ -6,6 +6,7 @@
 export KEYBASE_ROOT=$GOPATH/src/github.com/keybase
 
 # Keybase webserver
+export PATH="/usr/local/opt/node@8/bin:$PATH"
 alias kb='gorun github.com/keybase/client/go/keybase'
 export RUN_MODE=devel
 export KEYBASE_RUN_MODE=devel

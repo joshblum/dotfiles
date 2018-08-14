@@ -14,6 +14,7 @@ export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 export PATH=/usr/local/bin:/usr/local/sbin/$PATH:~/.local/bin
 export WORKON_HOME=$HOME/.virtualenvs
 DEFAULT_VIRTUALENV_WRAPPER=/usr/local/bin/virtualenvwrapper.sh
+VIRTUALENVWRAPPER_PYTHON=$HOME/.pyenv/shims/python
 
 if [ `uname` == "Darwin" ]; then
   source $DEFAULT_VIRTUALENV_WRAPPER
