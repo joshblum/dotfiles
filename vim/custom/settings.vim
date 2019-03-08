@@ -9,6 +9,7 @@ colorscheme solarized
 "------------------
 syntax enable " turn on syntax highlighting
 set showmatch " show matching braces when text indicator is over them
+set regexpengine=1
 
 filetype on
 filetype plugin indent on " enable file type detection
