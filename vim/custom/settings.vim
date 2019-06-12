@@ -55,3 +55,4 @@ autocmd BufRead,BufNewFile *.avdl setlocal filetype=avro-idl
 autocmd Filetype coffee setlocal ts=2 sw=2 sts=0 expandtab
 
 let coffee_compiler = 'iced'
+let g:typescript_indent_disable = 1
