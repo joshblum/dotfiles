@@ -4,7 +4,7 @@
 # not intended to be meaningful for anyone else.
 
 export KEYBASE_ROOT=$GOPATH/src/github.com/keybase
-export KEYBASE_DEV_TOOL_ROOTS="$HOME/Library/Application Support/Google/Chrome/Default/Extensions/fmkadmapgofadopljbjfkapdkoienihi,$HOME/Library/Application Support/Google/Chrome/Default/Extensions/hgldghadipiblonfkkicmgcbbijnpeog"
+export KEYBASE_DEV_TOOL_ROOTS="$HOME/Library/Application Support/Google/Chrome/Default/Extensions/fmkadmapgofadopljbjfkapdkoienihi"
 
 # Keybase webserver
 alias kb='gorun github.com/keybase/client/go/keybase'
