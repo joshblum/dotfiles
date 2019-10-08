@@ -56,6 +56,7 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 export PATH="/usr/local/opt/node@10/bin:$PATH"
+export PATH="/usr/local/opt/go@1.12/bin:$PATH"
 
 source ~/.keybase.dev
 source ~/.android.dev
