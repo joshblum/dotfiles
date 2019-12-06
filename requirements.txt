@@ -1,5 +1,4 @@
 pip==9.0.1
-virtualenvwrapper>=4.3.2
 autopep8>=1.1.1
 flake8>=2.4.0
 ipython>=3.1.0
