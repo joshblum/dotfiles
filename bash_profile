@@ -14,7 +14,6 @@ export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 export PATH=/usr/local/bin:/usr/local/sbin/$PATH:~/.local/bin
 export WORKON_HOME=$HOME/.virtualenvs
 DEFAULT_VIRTUALENV_WRAPPER=/usr/local/bin/virtualenvwrapper.sh
-VIRTUALENVWRAPPER_PYTHON=$HOME/.pyenv/shims/python
 
 if [ `uname` == "Darwin" ]; then
   source $DEFAULT_VIRTUALENV_WRAPPER
@@ -51,9 +50,6 @@ dcleanup(){
     docker rmi $(docker images --filter dangling=true -q 2>/dev/null) 2>/dev/null
 }
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 export PATH="/usr/local/opt/go@1.12/bin:$PATH"

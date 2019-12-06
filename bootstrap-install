@@ -1,15 +1,11 @@
 #!/usr/bin/env bash
 # dotfiles requires git and pip
-# and some stuff for pyenv: https://github.com/pyenv/pyenv/wiki/Common-build-problems
 if [ `uname` == "Darwin" ]; then
   brew update
-  brew install git python readline xz
+  brew install git python readline xz go
 else
   sudo apt-get update
-  sudo apt-get -y install git\
-      make build-essential libssl-dev zlib1g-dev libbz2-dev \
-      libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
-      xz-utils tk-dev
+  sudo apt-get -y install git
 fi
 
 
