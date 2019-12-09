@@ -60,3 +60,5 @@ export PATH="/usr/local/opt/go@1.12/bin:$PATH"
 
 source ~/.keybase.dev
 source ~/.android.dev
+
+export PATH="$HOME/.cargo/bin:$PATH"
