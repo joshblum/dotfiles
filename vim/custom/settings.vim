@@ -7,9 +7,12 @@ colorscheme solarized
 "------------------
 " Syntax and indent
 "------------------
-syntax enable " turn on syntax highlighting
+syntax on " turn on syntax highlighting
 set showmatch " show matching braces when text indicator is over them
 set regexpengine=1
+
+" Disable the default Vim startup message.
+set shortmess+=I
 
 filetype on
 filetype plugin indent on " enable file type detection
@@ -22,11 +25,17 @@ set tags=tags;/ " recursively search parent directory for tags
 set list
 set listchars=tab:\|\ ,trail:●,extends:>,precedes:<,nbsp:+
 
-set backspace=indent,eol,start " allow backspacing over everything
+" The backspace key has slightly unintuitive behavior by default. For example,
+" by default, you can't backspace before the insertion point set with 'i'.
+" This configuration makes backspace behave more reasonably, in that you can
+" backspace over anything.
+set backspace=indent,eol,start
 
-set incsearch " incremental search (as string is being typed)
+" Enable searching as you type, rather than waiting till you press enter.
+set incsearch
 set hlsearch " highlight search
 
+" Always show the status line at the bottom, even if you only have one window open.
 set laststatus=2
 set statusline=%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
 
@@ -39,6 +48,13 @@ set number " number lines
 " Ignore case when doing regex searches, except if you capitalize explicitly
 set ignorecase
 set smartcase
+
+" Disable audible bell because it's annoying.
+set noerrorbells visualbell t_vb=
+
+" Enable mouse support. You should avoid relying on this too much, but it can
+" sometimes be convenient.
+set mouse+=a
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set autoread
