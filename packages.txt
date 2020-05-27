@@ -1,3 +1,4 @@
 astyle
 wget
 tree
+clang-format

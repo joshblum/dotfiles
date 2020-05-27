@@ -22,6 +22,7 @@ export PATH="/usr/local/opt/node@12/bin:$PATH"
 export PATH="/usr/local/opt/go@1.13/bin:$PATH"
 
 source ~/.keybase.dev
+source ~/.zoom.dev
 source ~/.android.dev
 
 export PATH="$HOME/.cargo/bin:$PATH"

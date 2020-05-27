@@ -57,3 +57,6 @@
 [submodule "vim/bundle/vim-tsx"]
 	path = vim/bundle/vim-tsx
 	url = git@github.com:ianks/vim-tsx.git
+[submodule "vim/bundle/vim-clang-format"]
+	path = vim/bundle/vim-clang-format
+	url = git@github.com:rhysd/vim-clang-format.git

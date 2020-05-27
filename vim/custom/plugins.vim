@@ -20,3 +20,7 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
+
+" vim-clang-format
+let g:clang_format#code_style = 'chromium'
+autocmd FileType c,cpp,cc ClangFormatAutoEnable

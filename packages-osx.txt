@@ -2,3 +2,4 @@ astyle
 wget
 tree
 github/gh/gh
+clang-format

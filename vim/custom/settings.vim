@@ -3,6 +3,8 @@ set nocompatible " not vi compatible
 
 set background=dark
 colorscheme solarized
+set exrc
+set secure
 
 "------------------
 " Syntax and indent
