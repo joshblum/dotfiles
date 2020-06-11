@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-export PATH=$PATH:$HOME/local/bin
+export PATH=$HOME/local/bin:$PATH
 export PKG_CONFIG_PATH=$HOME/local/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/local/opt/openssl/lib/pkgconfig

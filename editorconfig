@@ -37,3 +37,11 @@ indent_style = space
 indent_size = 2
 max_char = 78
 brace_style = expand
+
+[*.{cc, h}]
+indent_style = space
+indent_size = 2
+
+[*.{proto}]
+indent_style = space
+indent_size = 2

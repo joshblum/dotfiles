@@ -65,7 +65,7 @@ autocmd BufNewFile,BufRead *.{template,webflow} set syntax=html
 autocmd BufNewFile,BufRead *.vcl set filetype=vcl
 autocmd BufNewFile,BufRead *.iced set filetype=coffee
 autocmd BufRead,BufNewFile *.avdl setlocal filetype=avro-idl
-autocmd BufWritePre *.{iced,py,toffee} %s/\s\+$//e
+autocmd BufWritePre *.{iced,py,toffee,proto} %s/\s\+$//e
 
 autocmd Filetype coffee setlocal ts=2 sw=2 sts=0 expandtab
 
