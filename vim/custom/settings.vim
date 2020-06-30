@@ -68,6 +68,7 @@ autocmd BufRead,BufNewFile *.avdl setlocal filetype=avro-idl
 autocmd BufWritePre *.{iced,py,toffee,proto,sql} %s/\s\+$//e
 
 autocmd Filetype coffee setlocal ts=2 sw=2 sts=0 expandtab
+autocmd Filetype proto setlocal ts=2 sw=2 sts=0 expandtab
 
 let coffee_compiler = 'iced'
 let g:typescript_indent_disable = 1
