@@ -3,3 +3,7 @@ wget
 tree
 github/gh/gh
 clang-format
+ripgrep
+htop
+httpie
+mycli
