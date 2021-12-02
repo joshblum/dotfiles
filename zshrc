@@ -143,3 +143,4 @@ for opt in msyql@5.6 \
 done
 
 setopt rmstarsilent
+unsetopt correct_all
