@@ -141,3 +141,5 @@ for opt in msyql@5.6 \
     ; do
     export PATH="/usr/local/opt/$opt/bin:$PATH"
 done
+
+setopt rmstarsilent
