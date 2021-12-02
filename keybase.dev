@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -eou pipefail
+set -eo pipefail
 
 # These are random aliases and settings specific to working at Keybase. They're
 # not intended to be meaningful for anyone else.
