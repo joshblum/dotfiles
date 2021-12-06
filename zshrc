@@ -106,10 +106,6 @@ if [ -S "$SSH_AUTH_SOCK" ] && [ ! -h "$SSH_AUTH_SOCK" ]; then
 fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 
-source "$HOME/.keybase.dev"
-source "$HOME/.zoom.dev"
-source "$HOME/.android.dev"
-
 export PATH="$HOME/.cargo/bin:$PATH"
 
 if [ -f $(which go 2>/dev/null) ]; then
@@ -141,6 +137,10 @@ for opt in msyql@5.6 \
     ; do
     export PATH="/usr/local/opt/$opt/bin:$PATH"
 done
+
+source "$HOME/.keybase.dev"
+source "$HOME/.zoom.dev"
+source "$HOME/.android.dev"
 
 setopt rmstarsilent
 unsetopt correct_all
