@@ -8,3 +8,4 @@ htop
 httpie
 mycli
 screen
+coreutils
