@@ -144,3 +144,4 @@ source "$HOME/.android.dev"
 
 setopt rmstarsilent
 unsetopt correct_all
+unsetopt nomatch
