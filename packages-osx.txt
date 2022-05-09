@@ -1,7 +1,7 @@
 astyle
 wget
 tree
-github/gh/gh
+gh
 clang-format
 ripgrep
 htop
