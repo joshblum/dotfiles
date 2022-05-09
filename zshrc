@@ -145,3 +145,5 @@ source "$HOME/.android.dev"
 setopt rmstarsilent
 unsetopt correct_all
 unsetopt nomatch
+# Use apple keychain in ssh-add -K
+export APPLE_SSH_ADD_BEHAVIOR=macos
