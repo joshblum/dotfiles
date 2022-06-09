@@ -23,7 +23,7 @@ waitapp() {
 }
 
 reapp() {
-  forever restart app
+  $KEYBASE_ROOT/keybase/node_modules/pm2/bin/pm2 restart app
   waitapp
 }
 
