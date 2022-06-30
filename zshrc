@@ -108,18 +108,19 @@ export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
-if [ -f $(which go 2>/dev/null) ]; then
-  export GOPATH=$(go env GOPATH)
-  export PATH=$PATH:$(go env GOPATH)/bin
-  export CDPATH=.:$GOPATH/src/github.com:$GOPATH/src/golang.org:$GOPATH/src
-fi
-
 # Aliases
 if [ "$(uname)" "==" "Darwin" ]; then
   alias gwd="pwd | pbcopy" # get working directoy
   alias cwd="cd $(pbpaste)" # change working directory
   alias cpr="gh pr create --web" # create pull request, open to browser
+  eval "$(/opt/homebrew/bin/brew shellenv)"
   export PATH="$HOME/.node/bin:$PATH"
+fi
+
+if [ -f $(which go 2&>/dev/null) ]; then
+  export GOPATH=$(go env GOPATH)
+  export PATH=$PATH:$(go env GOPATH)/bin
+  export CDPATH=.:$GOPATH/src/github.com:$GOPATH/src/golang.org:$GOPATH/src
 fi
 
 dcleanup(){
