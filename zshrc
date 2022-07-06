@@ -128,7 +128,7 @@ dcleanup(){
     docker rmi "$(docker images --filter dangling=true -q 2>/dev/null)" 2>/dev/null
 }
 
-for opt in msyql@5.6 \
+for opt in mysql@5.6 \
     node@12 \
     go \
     python \
