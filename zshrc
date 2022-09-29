@@ -117,6 +117,18 @@ if [ "$(uname)" "==" "Darwin" ]; then
   export PATH="$HOME/.node/bin:$PATH"
 fi
 
+for opt in mysql@5.7 \
+    node@12 \
+    go@1.18 \
+    python \
+    llvm \
+    openssl@3 \
+    screen \
+    ; do
+    export PATH="/opt/homebrew/opt/$opt/bin:$PATH"
+done
+
+
 if [ -f $(which go 2&>/dev/null) ]; then
   export GOPATH=$(go env GOPATH)
   export PATH=$PATH:$(go env GOPATH)/bin
@@ -127,17 +139,6 @@ dcleanup(){
     docker rm -v "$(docker ps --filter status=exited -q 2>/dev/null)" 2>/dev/null
     docker rmi "$(docker images --filter dangling=true -q 2>/dev/null)" 2>/dev/null
 }
-
-for opt in mysql@5.6 \
-    node@12 \
-    go \
-    python \
-    llvm \
-    openssl@3 \
-    screen \
-    ; do
-    export PATH="/usr/local/opt/$opt/bin:$PATH"
-done
 
 source "$HOME/.keybase.dev"
 source "$HOME/.zoom.dev"
