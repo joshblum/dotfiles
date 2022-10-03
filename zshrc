@@ -113,7 +113,6 @@ if [ "$(uname)" "==" "Darwin" ]; then
   alias gwd="pwd | pbcopy" # get working directoy
   alias cwd="cd $(pbpaste)" # change working directory
   alias cpr="gh pr create --web" # create pull request, open to browser
-  eval "$(/opt/homebrew/bin/brew shellenv)"
   export PATH="$HOME/.node/bin:$PATH"
 fi
 
