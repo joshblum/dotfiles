@@ -117,8 +117,8 @@ if [ "$(uname)" "==" "Darwin" ]; then
 fi
 
 for opt in mysql@5.7 \
-    node@12 \
-    go@1.18 \
+    node@16 \
+    go@1.19 \
     python \
     llvm \
     openssl@3 \
