@@ -124,7 +124,7 @@ for opt in mysql@5.7 \
     openssl@3 \
     screen \
     ; do
-    export PATH="/opt/homebrew/opt/$opt/bin:$PATH"
+    export PATH="/usr/local/opt/$opt/bin:$PATH"
 done
 
 
