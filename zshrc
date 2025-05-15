@@ -116,9 +116,9 @@ if [ "$(uname)" "==" "Darwin" ]; then
   export PATH="$HOME/.node/bin:$PATH"
 fi
 
-for opt in mysql@5.7 \
-    node@16 \
-    go@1.19 \
+for opt in mysql@8.0 \
+    node@20 \
+    go \
     python \
     llvm \
     openssl@3 \
