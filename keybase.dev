@@ -35,7 +35,7 @@ gorun() {
   project="$1"
   shift
   echo -n "Running \`go install $project\`... " >&2 && \
-  cd $project && go install "$project" && \
+  $(cd $project && go install "$project") && \
   echo "Done." >&2 && \
   "$GOPATH/bin/$(basename "$project")" "$@"
 }

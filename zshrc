@@ -116,6 +116,8 @@ if [ "$(uname)" "==" "Darwin" ]; then
   export PATH="$HOME/.node/bin:$PATH"
 fi
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 for opt in mysql@8.0 \
     node@20 \
     go \
@@ -123,8 +125,9 @@ for opt in mysql@8.0 \
     llvm \
     openssl@3 \
     screen \
+    ruby \
     ; do
-    export PATH="/usr/local/opt/$opt/bin:$PATH"
+    export PATH="/opt/homebrew/opt/$opt/bin:$PATH"
 done
 
 
